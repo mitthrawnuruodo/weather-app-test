@@ -123,9 +123,3 @@ weather-app-test/
   .gitignore
   README.md
 ```
-
----
-
-## Note
-
-`node-fetch` is no longer needed. Native `fetch` has been available in Node since v18, so it is removed from the code. Since it was the only dependency - and Netlify CLI is installed globally - `package.json` can be removed from the project entirely.
