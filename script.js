@@ -21,7 +21,7 @@ document.getElementById('getWeather').addEventListener('click', async () => {
 
     weatherDiv.innerHTML = `
       <p>Location: ${name} (${country})</p>
-      <p>Temperature: ${temp} °C</p>
+      <p>Temperature: ${temp}°C</p>
       <p>Weather: ${description}</p>
     `;
   } catch (error) {

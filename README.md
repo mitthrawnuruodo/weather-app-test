@@ -78,7 +78,7 @@ Open [http://localhost:8888](http://localhost:8888) in your browser.
 The frontend (`script.js`) calls the Netlify function:
 
 ```
-/.netlify/functions/fetch-weather?city=Oslo
+/.netlify/functions/fetch-weather?city=Bergen
 ```
 
 The function (`netlify/functions/fetch-weather.js`) reads `OPENWEATHER_API_KEY` from the environment, calls the OpenWeatherMap API server-side, and returns the result. The API key is never sent to the browser.
