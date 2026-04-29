@@ -1,8 +1,6 @@
 // netlify/functions/fetch-weather.js
 
-const fetch = require('node-fetch');
-
-exports.handler = async function (event, context) {
+export const handler = async function (event, context) {
   const API_KEY = process.env.OPENWEATHER_API_KEY;
   const city = event.queryStringParameters.city || 'New York';
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
